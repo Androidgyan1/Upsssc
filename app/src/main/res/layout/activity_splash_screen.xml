@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2980B9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:id="@+id/logo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:src="@drawable/paraknewlogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ImageView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/facematch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/logo"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:justificationMode="inter_word"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Face Matching App Based on AI"
+        android:textColor="#CACFD2"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/facematch"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/facematch"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/justify"
+        android:justificationMode="inter_word"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="यह ऐप उत्तर प्रदेश अधीनस्थ सेवा चयन आयोग द्वारा नियुक्त कक्ष निरीक्षकों को फेस-मैचिंग ए० आई०  टेक्नोलॉजी के आधार पर परीक्षा/साक्षात्कार में शामिल होने वाले उम्मीदवार को मान्य करने की अनुमति देता है, ताकि नकली उम्मीदवार की पहचान की जा सके और परीक्षा/साक्षात्कार प्रक्रिया में शामिल होने से रोका जा सके |"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        />
+
+
+
+    <TextView
+        android:visibility="invisible"
+        android:text="latitude"
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:text="longitude"
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:text="serialno"
+        android:id="@+id/serialno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+<Button
+    android:textStyle="bold"
+    android:layout_centerInParent="true"
+    android:textSize="18sp"
+    android:onClick="splashNext"
+    android:textAllCaps="false"
+    android:textColor="@android:color/black"
+    android:text="Next"
+    android:background="@drawable/checkbyrollnobackground"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="18dp"
+    android:layout_below="@id/justify"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></Button>
+
+
+
+
+    <View
+        android:layout_above="@+id/splash_logo"
+        android:background="#EC9206"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/nicnewlogo" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreen">
+
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:id="@+id/logo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paraknewlogo"></ImageView>
+
+
+    </RelativeLayout>
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/logo"
+        android:text="Your Device Build Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/logo"
+        android:id="@+id/MAC_address"
+        android:text="MAC Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+android:visibility="invisible"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/MAC_address"
+        android:id="@+id/secureid"
+        android:text="Secure_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:visibility="gone"
+            android:text="ip addesss"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/facematch"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/ip_address"
+            android:justificationMode="inter_word"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"/>
+
+
+
+
+
+
+
+        <TextView
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="Please Login with Mobile No."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+        android:id="@+id/mobile_no"
+        android:maxLength="10"
+        android:inputType="number"
+        android:drawableRight="@drawable/ic_baseline_smartphone_24"
+        android:padding="5dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="Mobile No."
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/mac_address"
+        android:drawableRight="@drawable/ic_baseline_vpn_key_24"
+        android:padding="5dp"
+        android:background="@drawable/edittextbackground"
+        android:hint="MAC Address"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="40dp"/>
+
+
+    <Button
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/login"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/checkbyrollnobackground"
+        android:text="Verify Mobile No."
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/login_progress"
+        android:layout_marginTop="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+
+
+
+
+<!--        <EditText-->
+<!--            android:visibility="invisible"-->
+<!--            android:clickable="false"-->
+<!--            android:id="@+id/ip_address"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></EditText>-->
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_above="@+id/login_logo"
+        android:background="#E6910B"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/nicnewlogo"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></ImageView>
+
+</RelativeLayout>

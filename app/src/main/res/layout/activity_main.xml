@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gov.upsssc.MainActivity">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:id="@+id/logo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+
+
+            <ImageView
+                android:src="@drawable/paraknewlogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ImageView>
+
+        </RelativeLayout>
+
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:background="#7FB3D5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+<LinearLayout
+    android:id="@+id/linearqrscandetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/show_longitute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:textSize="12sp" />
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/show_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="latitude"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:id="@+id/mobile_no_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:id="@+id/datafromcodescreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:text="mac address"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:id="@+id/MAC_Ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:visibility="gone"
+        android:text="ip address"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"
+        android:id="@+id/ip_main_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <EditText
+        android:visibility="gone"
+        android:editable="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scantext"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll Number"
+        android:textColor="#000"
+        android:textSize="14sp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/backgroundcolor">
+
+
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Canditate Name-"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:lines="2"
+                android:id="@+id/canditate_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="------"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liner1"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father/Hus Name-"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/canditate_father_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="------"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/liner_father_naem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liner2"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dob-"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/canditate_Dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="-------"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linernativeup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liner_father_naem"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Native of up -"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/canditade_native_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="-----"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linercategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linernativeup"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category/Sub-Cat -"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/canditade_category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="-------"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linergender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linercategory"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender -"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/canditade_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="------"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_below="@+id/liner2"
+            android:id="@+id/canditate_Photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="6dp"
+            android:scaleType="fitXY"></ImageView>
+
+        <ImageView
+            android:id="@+id/canditate_Sign"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/canditate_Photo"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="6dp"
+            android:scaleType="fitXY"></ImageView>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:background="#515A5A"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:text="Exam Centre details"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></TextView>
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/backgroundcolor"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/liner5"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="District Code Name-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_marginBottom="4dp"
+                android:padding="3dp"
+                android:background="@drawable/textborder"
+                android:id="@+id/canditate_District_Code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="----"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"></TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/canditate_District_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="-----"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner6"
+            android:layout_below="@id/liner5"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Centre Code Name-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_marginBottom="4dp"
+                android:padding="3dp"
+                android:background="@drawable/textborder"
+                android:id="@+id/canditate_Centre_Code"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:text="-----"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/canditate_Centre_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="-----"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner7"
+            android:layout_below="@id/liner6"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Centre Address-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/canditate_Centre_Address"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="20dp"
+                android:textSize="12sp"
+                android:text="--------"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:background="#515A5A"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:text="Examination Details"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></TextView>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/backgroundcolor"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/liner9"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Examination Date- "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/canditate_Exam_Date"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:text="-------"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner10"
+            android:layout_below="@id/liner9"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Examination Timing----> "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/canditate_Exam_Time"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:text="----------"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:elevation="10dp"
+        android:layout_marginBottom="6dp"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/checkbyrollnobackground"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:text="Take Canditate Photo"
+    android:layout_marginTop="25dp"/>
+
+
+
+<!--    <TextView-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/mac_id"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="MAC ID"-->
+<!--        android:textSize="22sp"/>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/phone_number"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="18sp"-->
+<!--        android:text="phone number"/>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/getIPAddress"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="IP address of your Device"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="25sp" />-->
+
+<!--    <TextView-->
+<!--        android:text="device name"-->
+<!--        android:id = "@+id/text"-->
+<!--        android:textSize = "12sp"-->
+<!--        android:layout_width = "wrap_content"-->
+<!--        android:layout_height = "wrap_content"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/showLocation"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Location"-->
+<!--        android:textSize="24sp" />-->
+
+
+
+
+
+
+
+</LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
